@@ -2,4 +2,4 @@
 
 Cadastro Pessoal
 
-Formulario de cadastro com validação de preenchimento referente aos campos obrigatorio.
+Formulario de cadastro com validação de preenchimento referente aos campos obrigatorios.
