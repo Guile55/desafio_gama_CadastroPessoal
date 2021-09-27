@@ -1,0 +1,97 @@
+﻿<html>
+
+<head>
+	<title>Cadastro Pessoal - Atracao</title>
+	<link href="estilo.css" rel="stylesheet" />
+	<script src="script.js">	</script>
+
+</head>
+
+<body>
+
+	<form name="cadastroPessoal" onsubmit="return validacao()">
+
+		<fieldset>
+			<legend>Cadastro</legend>
+
+			<div class="dadosGerais">
+
+				<div class="primeiraLinha">
+
+					<label for="nomeCompleto">Nome Completo*:</label><br>
+					<input type="text" maxlength="40" id="nomeCompleto" name="nomeCompleto" class="dadosUsuario"
+						placeholder="Digite seu nome completo"><br><br>
+
+					<label for="Cpf">CPF*:</label><br>
+					<input type="number" id="Cpf" name="cpf" class="dadosUsuario" placeholder="Digite seu CPF" onkeyup="mask_cpf()"><br><br>
+
+					<label for="Rg">RG:</label><br>
+					<input type="number" id="Rg" name="rg" class="dadosUsuario" placeholder="Digite seu RG"><br><br>
+				</div>
+
+				<div class="segundaLinha">
+
+					<label for="Sexo">Sexo:</label><br>
+					<select id="Sexo" name="Sexo" class="dadosUsuario" placeholder="selecione">
+						<option value="selecione">selecione</option>
+						<option value="Feminino">F</option>
+						<option value="Masculino">M</option>
+					</select><br><br>
+
+					<label for="Cep">CEP:</label><br>
+						<input type="number" id="Cep" name="cep" class="dadosUsuario" placeholder="Digite o Cep"> <br><br>
+						
+					<label for="Endereco">Endereco*:</label><br>
+					<input type="text" maxlength="40" id="Endereco" name="endereco" class="dadosUsuario"
+						placeholder="Digite seu Endereco"><br><br>
+				</div>
+
+				<div class="terceiraLinha">
+
+					<label for="Numero">Numero*:</label><br>
+					<input type="number" id="Numero" name="numero" class="dadosUsuario"
+						placeholder="Digite o numero"><br><br>
+
+					<label for="Bairro">Bairro:</label><br>
+					<input type="text" maxlength="20" id="Bairro" name="bairro" class="dadosUsuario"
+						placeholder="Digite o Bairro">
+					<br><br>
+
+					<label for="Cidade">Cidade:</label><br>
+					<input type="text" maxlength="20" id="Cidade" name="cidade" class="dadosUsuario"
+						placeholder="Digite a Cidade"><br><br>
+	
+				</div>
+
+				<div class="quartaLinha">
+
+					<label for="Estado">Estado:</label><br>
+					<input type="text" maxlength="2" id="Estado" name="estado" class="dadosUsuario"
+						placeholder="Digite a UF"><br><br>
+
+					<label for="Telefone Fixo">Telefone Fixo:</label><br>
+					<input type="tel" id="Telefone Fixo" name="telefoneFixo" class="dadosUsuario"
+						placeholder="(xx)xxxx-xxxx"><br><br>
+
+					<label for="Telefone Celular">Telefone Celular*:</label><br>
+					<input type="tel" id="Telefone Celular" name="telefoneCelular" class="dadosUsuario"
+						placeholder="(xx)xxxxx-xxxx"><br><br>
+
+				</div>
+
+			</div>
+
+			<P>*campos obrigatórios</P>
+
+			<div class="enviar">
+				<input type="submit">
+			</div>
+
+		</fieldset>
+
+
+	</form>
+
+</body>
+
+</html>
